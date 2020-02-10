@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwainDotNet.WinFroms</name>
+    </assembly>
+    <members>
+        <member name="T:TwainDotNet.WinFroms.WinFormsWindowMessageHook">
+            <summary>
+            A windows message hook for WinForms applications.
+            </summary>
+        </member>
+    </members>
+</doc>

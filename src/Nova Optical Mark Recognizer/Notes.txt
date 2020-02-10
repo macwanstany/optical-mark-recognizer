@@ -1,0 +1,52 @@
+﻿- all Enums can be placed in a separate class file for maintaining structure. This can also result in easy populating enum values from XML reader
+
+
+------------------------------------
+blob  - > filter blobs whose,
+130 - width less than
+90 - height less than
+------------------------------------
+
+	Bitmap bm = new Bitmap(picbox_displayomrsheet.Width, picbox_displayomrsheet.Height);
+	Graphics g = Graphics.FromImage(bm);
+	Rectangle[] Blocks = new Rectangle[]
+	{
+		new Rectangle(52, 384, 99, 454),
+		new Rectangle(196, 384, 99, 454),
+		new Rectangle(340, 384, 99, 454),
+		new Rectangle(484, 384, 99, 454)
+	};
+
+	List<Rectangle>[] blockslices = new List<Rectangle>[Blocks.Length];
+	int totalquestionsperblock = 25;
+	for (int i = 0; i < Blocks.Length; i++)
+	{
+		blockslices[i] = new List<Rectangle>();
+	}
+
+	for (int i = 0; i < Blocks.Length; i++)
+	{
+		Rectangle[] singleblockslices = SliceBlock(Blocks[i], totalquestionsperblock);
+		foreach (Rectangle slice in singleblockslices)
+		{
+			blockslices[i].Add(slice);
+		}
+	}
+            
+	for (int i = 0; i < Blocks.Length; i++)
+	{
+		for(int j = 0; j < blockslices[i].Count; j++) //Rectangle slice in blockslices[i])
+		{
+			int curr_quesno = ((int)(blockslices[i][j].Bottom - Blocks[i].Top) / blockslices[i][j].Height) + (i * totalquestionsperblock);
+			if (dgv_omrresult.Rows[(curr_quesno - 1)].Cells[1].Value.ToString() == dgv_omrresult.Rows[(curr_quesno - 1)].Cells[2].Value.ToString())
+			{
+				g.DrawImage(imagelist_ansresult.Images[0], new Rectangle(blockslices[i][j].Location.X, blockslices[i][j].Location.Y, 10, 10));
+				// g.DrawImage(imagelist_ansresult.Images[0], new Rectangle(Blocks[i].Location.X, blockslices[i][j].Location.Y, 10, 10));
+			}
+			else
+			{   
+				g.DrawImage(imagelist_ansresult.Images[1], new Rectangle(blockslices[i][j].Location.X, blockslices[i][j].Location.Y, 10, 10));                        
+				//g.DrawImage(imagelist_ansresult.Images[1], new Rectangle(Blocks[i].Location.X, blockslices[i][j].Location.Y, 10, 10));
+			}                    
+		}                                 
+	}            

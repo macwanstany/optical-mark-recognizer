@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwainDotNet</name>
+    </assembly>
+    <members>
+        <member name="M:TwainDotNet.TwainNative.Twain32Native.DsmParent(TwainDotNet.TwainNative.Identity,System.IntPtr,TwainDotNet.TwainNative.DataGroup,TwainDotNet.TwainNative.DataArgumentType,TwainDotNet.TwainNative.Message,System.IntPtr@)">
+            <summary>
+            DSM_Entry with a window handle as the parent parameter.
+            </summary>
+            <param name="origin"></param>
+            <param name="zeroPtr">Should always be set to null.</param>
+            <param name="dg"></param>
+            <param name="dat"></param>
+            <param name="msg"></param>
+            <param name="windowHandle">The window handle that will act as the source's parent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TwainDotNet.TwainNative.Twain32Native.DsmIdentity(TwainDotNet.TwainNative.Identity,System.IntPtr,TwainDotNet.TwainNative.DataGroup,TwainDotNet.TwainNative.DataArgumentType,TwainDotNet.TwainNative.Message,TwainDotNet.TwainNative.Identity)">
+            <summary>
+            DSM_Entry with an identity as the parameter
+            </summary>
+            <param name="origin"></param>
+            <param name="zeroPtr">Should always be set to null.</param>
+            <param name="dg"></param>
+            <param name="dat"></param>
+            <param name="msg"></param>
+            <param name="idds">The identity structure.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TwainDotNet.TwainNative.Twain32Native.DsUserInterface(TwainDotNet.TwainNative.Identity,TwainDotNet.TwainNative.Identity,TwainDotNet.TwainNative.DataGroup,TwainDotNet.TwainNative.DataArgumentType,TwainDotNet.TwainNative.Message,TwainDotNet.TwainNative.UserInterface)">
+            <summary>
+            DSM_Entry with a user interface parameter. Acts on the data source.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.TransferMechanism">
+            <summary>
+            ICAP_XFERMECH values (Image Transfer)
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.Compression">
+            <summary>
+            Twain spec ICAP_COMPRESSION values.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.CapabilityEnumValue">
+            <summary>
+            /* TWON_ENUMERATION. Container for a collection of values. */
+            typedef struct {
+               TW_UINT16  ItemType;
+               TW_UINT32  NumItems;     /* How many items in ItemList                 */
+               TW_UINT32  CurrentIndex; /* Current value is in ItemList[CurrentIndex] */
+               TW_UINT32  DefaultIndex; /* Powerup value is in ItemList[DefaultIndex] */
+               TW_UINT8   ItemList[1];  /* Array of ItemType values starts here       */
+            } TW_ENUMERATION, FAR * pTW_ENUMERATION;
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.CapabilityEnumValue._valueStart">
+            <summary>
+            The start of the array values
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.RotationSettings">
+            <summary>
+            Settings for hardware image rotation.  Includes
+            hardware deskewing detection
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.RotationSettings.AutomaticDeskew">
+            <summary>
+            Gets or sets a value indicating whether [automatic deskew].
+            </summary>
+            <value><c>true</c> if [automatic deskew]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TwainDotNet.RotationSettings.AutomaticBorderDetection">
+            <summary>
+            Gets or sets a value indicating whether [automatic border detection].
+            </summary>
+            <value>
+            	<c>true</c> if [automatic border detection]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:TwainDotNet.RotationSettings.AutomaticRotate">
+            <summary>
+            Gets or sets a value indicating whether [automatic rotate].
+            </summary>
+            <value><c>true</c> if [automatic rotate]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TwainDotNet.RotationSettings.FlipSideRotation">
+            <summary>
+            Gets or sets the flip side rotation.
+            </summary>
+            <value>The flip side rotation.</value>
+        </member>
+        <member name="F:TwainDotNet.Capability.log">
+            <summary>
+            The logger for this class.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.CapabilityArrayValue">
+            <summary>
+            /* TWON_ARRAY. Container for array of values (a simplified TW_ENUMERATION) */
+            typedef struct {
+               TW_UINT16  ItemType;
+               TW_UINT32  NumItems;    /* How many items in ItemList           */
+               TW_UINT8   ItemList[1]; /* Array of ItemType values starts here */
+            } TW_ARRAY, FAR * pTW_ARRAY;
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.CapabilityArrayValue._valueStart">
+            <summary>
+            The start of the array values
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.ResolutionSettings.Fax">
+            <summary>
+            Fax quality resolution.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.ResolutionSettings.Photocopier">
+            <summary>
+            Photocopier quality resolution.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.ResolutionSettings.ColourPhotocopier">
+            <summary>
+            Colour photocopier quality resolution.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ResolutionSettings.Dpi">
+            <summary>
+            The DPI to scan at. Set to null to use the current default setting.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ResolutionSettings.ColourSetting">
+            <summary>
+            The colour settings to use.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.Win32.BitmapRenderer.log">
+            <summary>
+            The logger for this class.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.ContainerType">
+            <summary>
+            TWON_...
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.Orientation">
+            <summary>
+            Twain spec ICAP_ORIENTATION values.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.Orientation.Default">
+            <summary>
+            Default is zero rotation, same as Portrait.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.Orientation.Auto">
+            <summary>
+            Following require Twain 2.0+. 
+            </summary>
+        </member>
+        <member name="M:TwainDotNet.Twain.StartScanning(TwainDotNet.ScanSettings)">
+            <summary>
+            Starts scanning.
+            </summary>
+        </member>
+        <member name="M:TwainDotNet.Twain.SelectSource">
+            <summary>
+            Shows a dialog prompting the use to select the source to scan from.
+            </summary>
+        </member>
+        <member name="M:TwainDotNet.Twain.SelectSource(System.String)">
+            <summary>
+            Selects a source based on the product name string.
+            </summary>
+            <param name="sourceName">The source product name.</param>
+        </member>
+        <member name="E:TwainDotNet.Twain.ScanningComplete">
+            <summary>
+            Notification that the scanning has completed.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.Twain.DefaultSourceName">
+            <summary>
+            Gets the product name for the default source.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.Twain.SourceNames">
+            <summary>
+            Gets a list of source product names.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.IWindowsMessageHook.UseFilter">
+            <summary>
+            Gets or sets if the message filter is in use.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.IWindowsMessageHook.FilterMessageCallback">
+            <summary>
+            The delegate to call back then the filter is in place and a message arrives.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.IWindowsMessageHook.WindowHandle">
+            <summary>
+            The handle to the window that is performing the scanning.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.DataSourceManager.log">
+            <summary>
+            The logger for this class.
+            </summary>
+        </member>
+        <member name="E:TwainDotNet.DataSourceManager.ScanningComplete">
+            <summary>
+            Notification that the scanning has completed.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.PendingXfers">
+            <summary>
+            /* DAT_PENDINGXFERS. Used with MSG_ENDXFER to indicate additional data. */
+            typedef struct {
+               TW_UINT16 Count;
+               union {
+                  TW_UINT32 EOJ;
+                  TW_UINT32 Reserved;
+               };
+            } TW_PENDINGXFERS, FAR *pTW_PENDINGXFERS;
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.PageSettings">
+            <summary>
+            Page settings used for automatic document feeders
+            scanning.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.PageSettings.Default">
+            <summary>
+            Default Page setup - A4 Letter and Portrait orientation
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.PageSettings.Orientation">
+            <summary>
+            Gets or sets the page orientation.
+            </summary>
+            <value>The orientation.</value>
+        </member>
+        <member name="P:TwainDotNet.PageSettings.Size">
+            <summary>
+            Gets or sets the Page Size.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.PageType.A4">
+            <summary>
+            A4 ad A4Letter
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.PageType.JISB5">
+            <summary>
+            JISB5 and B5Letter
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.PageType.ISOB4">
+            <summary>
+            ISOB4 and B4
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.PageType.ISOB6">
+            <summary>
+            ISOB6 and B6
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.PageType.ISOB3">
+            <summary>
+            ISOB3 and B3
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.FlipRotation">
+            <summary>
+            Twain spec ICAP_FLIPROTATION values.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.ScanSettings.TransferAllPages">
+            <summary>
+            The value to set to scan all available pages.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.ScanSettings.Default">
+            <summary>
+            Default scan settings.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.ShowTwainUI">
+            <summary>
+            Indicates if the TWAIN/driver user interface should be used to pick the scan settings.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.ShowProgressIndicatorUI">
+            <summary>
+            Gets or sets a value indicating whether [show progress indicator ui].
+            If TRUE, the Source will display a progress indicator during acquisition and transfer, regardless of whether the Source's user interface is active. 
+            If FALSE, the progress indicator will be suppressed if the Source's user interface is inactive.
+            The Source will continue to display device-specific instructions and error messages even with the Source user interface and progress indicators turned off. 
+            </summary>
+            <value><c>true</c> if [show progress indicator ui]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.UseDocumentFeeder">
+            <summary>
+            Indicates if the automatic document feeder (ADF) should be the source of the document(s) to scan.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.UseAutoFeeder">
+            <summary>
+            Indicates if the automatic document feeder (ADF) should continue feeding document(s) to scan after the negotiated number of pages are acquired.
+            UseDocumentFeeder must be true
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.UseAutoScanCache">
+            <summary>
+            Indicates if the source should continue scanning without waiting for the application to request the image transfers.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.AbortWhenNoPaperDetectable">
+            <summary>
+            Indicates if the transfer should not start when no paper was detected (e.g. by the ADF).
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.TransferCount">
+            <summary>
+            The number of pages to transfer.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.ShouldTransferAllPages">
+            <summary>
+            Indicates if all pages should be transferred.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.Resolution">
+            <summary>
+            The resolution settings. Set null to use current defaults.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.UseDuplex">
+            <summary>
+            Whether to use duplexing, if supported.
+            </summary>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.Page">
+            <summary>
+            The page / paper settings. Set null to use current defaults.
+            </summary>
+            <value>The page.</value>
+        </member>
+        <member name="P:TwainDotNet.ScanSettings.Rotation">
+            <summary>
+            Gets or sets the rotation.
+            </summary>
+            <value>The rotation.</value>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.TwainVersion">
+            <summary>
+            TW_VERSION
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.TwainCapability">
+            <summary>
+            /* DAT_CAPABILITY. Used by application to get/set capability from/in a data source. */
+            typedef struct {
+               TW_UINT16  Cap; /* id of capability to set or get, e.g. CAP_BRIGHTNESS */
+               TW_UINT16  ConType; /* TWON_ONEVALUE, _RANGE, _ENUMERATION or _ARRAY   */
+               TW_HANDLE  hContainer; /* Handle to container of type Dat              */
+            } TW_CAPABILITY, FAR * pTW_CAPABILITY;
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.AutoSize">
+            <summary>
+            Twain spec ICAP_AUTOSIZE values Added 2.0 
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.ImageFileFormat">
+            <summary>
+            Twain spec ICAP_IMAGEFILEFORMAT values.
+            </summary>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.CapabilityOneValue">
+            <summary>
+            /* TWON_ONEVALUE. Container for one value. */
+            typedef struct {
+               TW_UINT16  ItemType;
+               TW_UINT32  Item;
+            } TW_ONEVALUE, FAR * pTW_ONEVALUE;
+            </summary>
+        </member>
+        <member name="M:TwainDotNet.DataSource.NegotiatePageSize(TwainDotNet.ScanSettings)">
+            <summary>
+            Negotiates the size of the page.
+            </summary>
+            <param name="scanSettings">The scan settings.</param>
+        </member>
+        <member name="M:TwainDotNet.DataSource.NegotiateAutomaticRotate(TwainDotNet.ScanSettings)">
+            <summary>
+            Negotiates the automatic rotation capability.
+            </summary>
+            <param name="scanSettings">The scan settings.</param>
+        </member>
+        <member name="M:TwainDotNet.DataSource.NegotiateAutomaticBorderDetection(TwainDotNet.ScanSettings)">
+            <summary>
+            Negotiates the automatic border detection capability.
+            </summary>
+            <param name="scanSettings">The scan settings.</param>
+        </member>
+        <member name="M:TwainDotNet.DataSource.NegotiateProgressIndicator(TwainDotNet.ScanSettings)">
+            <summary>
+            Negotiates the indicator.
+            </summary>
+            <param name="scanSettings">The scan settings.</param>
+        </member>
+        <member name="T:TwainDotNet.TwainNative.UserInterface">
+            <summary>
+            DAT_USERINTERFACE. Coordinates UI between application and data source. 
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.UserInterface.ShowUI">
+            <summary>
+            TRUE if DS should bring up its UI
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.UserInterface.ModalUI">
+            <summary>
+            For Mac only - true if the DS's UI is modal
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.UserInterface.ParentHand">
+            <summary>
+            For windows only - Application window handle
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.Bummer">
+            <summary>
+            Unknown failure.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.MaxConntions">
+            <summary>
+            Data source is already connected to the maximum number of connections.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.OperationError">
+            <summary>
+            Data source or data source manager reported an error.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.BadProtocol">
+            <summary>
+            Unknown data group/data argument type combination.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.SequenceError">
+            <summary>
+            Message out of expected sequence.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.BadDestination">
+            <summary>
+            Unknown destination application/source.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.CapabilityBadOperation">
+            <summary>
+            Operation not supported by capability.
+            </summary>
+        </member>
+        <member name="F:TwainDotNet.TwainNative.ConditionCode.Denied">
+            <summary>
+            File system operation is denied.
+            </summary>
+        </member>
+    </members>
+</doc>

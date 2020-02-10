@@ -1,0 +1,27 @@
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\Nova Optical Mark Recognizer.exe
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\Nova Optical Mark Recognizer.pdb
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Controls.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Imaging.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Math.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.WinFroms.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\log4net.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Video.dll
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.WinFroms.pdb
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.WinFroms.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.pdb
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\TwainDotNet.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Controls.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Imaging.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Math.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\log4net.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\bin\Release\AForge.Video.xml
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova Optical Mark Recognizer.csprojResolveAssemblyReference.cache
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova_Optical_Mark_Recognizer.ProcessOMR.resources
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova_Optical_Mark_Recognizer.Properties.Resources.resources
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova_Optical_Mark_Recognizer.ScanDocument.resources
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova Optical Mark Recognizer.csproj.GenerateResource.Cache
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova Optical Mark Recognizer.exe
+D:\Nova Resources\Project OMR files\Nova OMR Recognition\Nova Optical Mark Recognizer\Nova Optical Mark Recognizer\obj\x86\Release\Nova Optical Mark Recognizer.pdb

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SheetSpecifications>
+  <OmrSheet sheetid="1" sheetsize="A4" totalquestions="100">
+    <BlobsConfig>
+      <MinBlobRatio>0.6</MinBlobRatio>
+      <MaxBlobRatio>1.4</MaxBlobRatio>
+      <MinBlobHeight>30</MinBlobHeight>
+      <MinBlobwidth>30</MinBlobwidth>
+      <Fullness>0.7</Fullness>
+      <BlobRectMarker>
+        <MinArea>1250</MinArea>
+        <MaxArea>3110</MaxArea>
+      </BlobRectMarker>
+      <BlobEdgeMarkers>
+        <MinWidthBlobtoDocRatio>0.031</MinWidthBlobtoDocRatio>
+        <MaxWidthBlobtoDocRatio>0.042</MaxWidthBlobtoDocRatio>
+      </BlobEdgeMarkers>
+      <QuadTransform>
+        <NewWidth>2100</NewWidth>
+        <NewHeight>2970</NewHeight>
+      </QuadTransform>
+      <BlobBubbles>
+        <MinAcceptableDistortion>0.5</MinAcceptableDistortion>
+        <RelativeDistortionLimit>0.057</RelativeDistortionLimit>
+        <Fullness>0.65</Fullness>
+      </BlobBubbles>
+      <PreProcess>
+        <Threshhold order="1">160</Threshhold>
+        <Threshhold order="2">190</Threshhold>
+      </PreProcess>
+    </BlobsConfig>
+    <AnsBlocksSpecs>
+      <X>105</X>
+      <Y>1365</Y>
+      <Width>2060</Width>
+      <Height>1866</Height>
+      <NumberOfBlocks>4</NumberOfBlocks>
+      <QuesPerBlock>25</QuesPerBlock>
+      <BlockRect tag="1">
+        <X>191</X>
+        <Y>1471</Y>
+        <Width>365</Width>
+        <Height>1748</Height>
+      </BlockRect>
+      <BlockRect tag="2">
+        <X>724</X>
+        <Y>1471</Y>
+        <Width>365</Width>
+        <Height>1748</Height>
+      </BlockRect>
+      <BlockRect tag="3">
+        <X>1258</X>
+        <Y>1471</Y>
+        <Width>365</Width>
+        <Height>1748</Height>
+      </BlockRect>
+      <BlockRect tag="4">
+        <X>1797</X>
+        <Y>1471</Y>
+        <Width>365</Width>
+        <Height>1748</Height>
+      </BlockRect>
+    </AnsBlocksSpecs>
+    <CandidateName>
+      <X>103</X>
+      <Y>226</Y>
+      <Width>867</Width>
+      <Height>179</Height>
+    </CandidateName>
+    <ExaminationSubject>
+      <X>103</X>
+      <Y>445</Y>
+      <Width>867</Width>
+      <Height>179</Height>
+    </ExaminationSubject>
+    <TestDate>
+      <X>205</X>
+      <Y>670</Y>
+      <Width>767</Width>
+      <Height>116</Height>
+    </TestDate>
+    <TestTime>
+      <X>435</X>
+      <Y>868</Y>
+      <Width>327</Width>
+      <Height>182</Height>
+    </TestTime>
+    <CandidateSignature>
+      <X>1606</X>
+      <Y>799</Y>
+      <Width>564</Width>
+      <Height>255</Height>
+    </CandidateSignature>
+    <SupervisorSignature>
+      <X>1606</X>
+      <Y>502</Y>
+      <Width>564</Width>
+      <Height>245</Height>
+    </SupervisorSignature>
+    <MarksObtained>
+      <X>1603</X>
+      <Y>226</Y>
+      <Width>567</Width>
+      <Height>227</Height>
+    </MarksObtained>
+  </OmrSheet>
+</SheetSpecifications>
