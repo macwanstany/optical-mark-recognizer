@@ -8,3 +8,4 @@ An Optical Mark Recognizing (Image Processing) desktop application created using
 # What is Optical Mark Recognition?
 Optical Mark Recognition is the process of capturing human marked information from physical documents into a digital form through the use of computers often using an Image Processing Library.
 
+![alt text](https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/1.jpg)
