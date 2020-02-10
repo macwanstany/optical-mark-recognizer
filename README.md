@@ -12,6 +12,14 @@ Optical Mark Recognition is the process of capturing human marked information fr
 
 The User first loads the physical filled OMR answer sheet into the scanner. He then proceeds to press the 'scan sheet' button, which would generate a digital copy of that image. The user now presses the 'Read OMR Sheet Button'.
 
+<p>
+  <img src="https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/workflow/1.png" width="900">  
+</p>
+
+<p>
+  <img src="https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/workflow/2.png" width="900">  
+</p>
+
 # Challenges in bubble Detection
 The process of OMR sheet detection to bubble detection to answer checking required very high level of accuracy. In order to address those concerns Matlab was used to verify the process of initial preprocessing and custom OMR sheets were designed to provide maximum bubble detectability.
 
@@ -47,5 +55,5 @@ Sample Images:
 </p>
 
 <p>
-  <img src="https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/5.bmp" width="900" title="Question Block Detection">  
+  <img src="https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/5.jpg" width="900" title="Question Block Detection">  
 </p>
