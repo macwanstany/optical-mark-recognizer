@@ -21,9 +21,9 @@ The User first loads the physical filled OMR answer sheet into the scanner. He t
 </p>
 
 # Challenges in bubble Detection
-The process of OMR sheet detection to bubble detection to answer checking required very high level of accuracy. In order to address those concerns Matlab was used to verify the process of initial preprocessing and custom OMR sheets were designed to provide maximum bubble detectability.
+The process of OMR sheet detection to bubble detection to answer checking required a very high level of accuracy. In order to address those concerns Matlab was used to verify the process of initial preprocessing and custom OMR sheets were designed to provide maximum bubble detectability.
 
-There were multiple challenges associated with this development. The major challenge was to address the errors that could be introduced either by the scanner or the test takers. If the OMR sheet was scanned upside down and/or slant, it would be very difficult for the program to detect the filled bubbles. Apparently the test taker could have used a light pencil for filling the bubbles and this could also be significantly difficult for the program to detect. In order to address these issues, I used geometric quadrant calculations and incorporated them within the flattening phase so that the post processed image was always available as correctly oriented. Similarly, to address the light pencil problem, I used adjustments on the image to darken them, which was done during second preprocessing. This functionality in itself skyrocketed the detection rates along with ability to detect the worst case scenarios to near 100% as this software is able:
+There were multiple challenges associated with this development. The major challenge was to address the errors that could be introduced either by the scanner or the test takers. If the OMR sheet was scanned upside down and/or slant, it would be very difficult for the program to detect the filled bubbles. Apparently the test taker could have used a light pencil for filling the bubbles and this could also be significantly difficult for the program to detect. In order to address these issues, I used geometric quadrant calculations and incorporated them within the flattening phase so that the post processed image was always available as correctly oriented. Similarly, to address the light pencil problem, I used adjustments on the image to darken them, which was done during second preprocessing. This functionality in itself skyrocketed the detection rates along with ability to detect the worst case scenarios to near 100% as this software would now be able to:
 
 - Detect upside down OMR sheet
 - Detect slant OMR sheet
@@ -33,7 +33,7 @@ There were multiple challenges associated with this development. The major chall
 The Pre Processing consists of three parts:
 
 1. Pre Processing phase 1
-Here the OMR sheet was converted to gray scale image. Two filters were then applied to the gray scale image. The first was Invert filter and second was threshold filter. This image was now supplied for the flattening phase.
+In this phase, the OMR sheet was converted to gray scale image. Two filters were then applied to the gray scale image. The first was Invert filter and second was threshold filter. This image was now supplied for the flattening phase.
 
 2. Image Flattening
 At this phase quadrant calculations are done. A sub image is extracted which is always correctly oriented. This image is now returned back to the main algorithm for a second round of preprocessing.
