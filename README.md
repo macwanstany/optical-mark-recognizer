@@ -44,7 +44,7 @@ At this phase quadrant calculations are done. A sub image is extracted which is 
 3. Pre Processing phase 2
 A second preprocessing same as the above is applied once again on the flattened image in order to darken up the light bubbles which the test taker might have filled. The resulting image is now returned back to the main algorithm for answer (i.e. bubble) detection.
 
-# Sample Images
+Sample Images:
 <p>  
   <img src="https://github.com/macwanstany/optical-mark-recognizer/blob/master/images/1.jpg" width="900" title="Scanne Image">  
 </p>
